@@ -7,6 +7,7 @@ int main()
     int b = 750;
     int c = 200;
     scanf("%d", &T);
+    int count = 0;
     for (int i = 1; i < T / a; i++)
     {
         for (int y = 2; y < T / b; y = y + 2)
@@ -15,11 +16,13 @@ int main()
                 if ((i * a + y * b + z * c) == T) {
                     if (z < i || z < y) {
                         printf("%d %d %d\n", i, y, z);
+                        count++;
                     }
                 }
             }
         }
     }
-    printf("none");
+    if(count == 0)
+        printf("none");
     return 0;
 }
