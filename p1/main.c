@@ -6,7 +6,7 @@ int main()
     int a = 900;
     int b = 750;
     int c = 200;
-    scanf_s("%d", &T);
+    scanf("%d", &T);
     for (int i = 1; i < T / a; i++)
     {
         for (int y = 2; y < T / b; y = y + 2)
